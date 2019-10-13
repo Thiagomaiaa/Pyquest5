@@ -1,0 +1,12 @@
+a =[]
+b =[]
+c =[]
+soma = 0.0
+for i in range (5):
+    a.append(float(input(f'Digite o {i + 1}º número inteiro para o vetor a: ')))
+    b.append(float(input(f'Digite o {i + 1}º número inteiro para o vetor b: ')))
+    soma = a[i] + b[i]
+    c.append(soma)
+print(c)
+
+

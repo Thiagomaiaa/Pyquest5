@@ -1,0 +1,21 @@
+cod=[]
+nome=[]
+tel=[]
+fim = 1
+for i in range(3):
+    cod.append(int(input('Digite o código: ')))
+    nome.append(input('Digite o nome: '))
+    tel.append(int(input('Digite o telefone: ')))
+    print('-'*50)
+while fim == 1:
+    consulta = int(input('Digite o código a ser consultado: '))
+    print('-'*50)
+    print(f'Código: {cod[cod.index(consulta)]}')
+    print(f'Nome: {nome[cod.index(consulta)]}')
+    print(f'Telefone: {tel[cod.index(consulta)]}')
+    print('-'*50)
+    print('Deseja realizar outra consulta?')
+    print ('(1) Sim   (0) Não')
+    fim = int(input(''))
+    print('-'*50)
+print('Volte sempre!')

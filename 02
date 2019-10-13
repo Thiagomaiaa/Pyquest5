@@ -1,0 +1,15 @@
+matricula = []
+salariob = []
+desconto = []
+for i in range(5):
+    matricula.append(int(input('Digite sua matricula: ')))
+    salariob.append(float(input('Digite seu salário: ')))
+    desc = (salariob[i] * 11) / 100
+    desconto.append(desc)
+    print('-'*50)
+for j in range(5):
+    print('Matricula: ',matricula[j])
+    print('Salário: ',salariob[j])
+    print('Desconto: ',desconto[j])
+    print('Salario com desconto: ',salariob[j] - desconto[j])
+    print('-'*50)

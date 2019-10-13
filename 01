@@ -1,0 +1,16 @@
+nome = []
+altura = []
+maior = []
+for i in range(3):
+    nome.append(input('Digite seu nome: '))
+    altura.append(float(input('Digite sua altura: ')))
+    if altura[i] > 1.70:
+        maior += nome[i], altura[i]
+
+if len(maior) == 0:
+    print('Nenhuma pessoa maior de 1,70 foi cadastrada.')
+else:
+    for x in maior:
+        print(x)
+
+

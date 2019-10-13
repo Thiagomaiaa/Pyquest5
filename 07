@@ -1,0 +1,7 @@
+inteiros =[]
+quadrado= []
+for i in range (5):
+    inteiros.append(float(input(f'Digite o {i + 1}º número inteiro: ')))
+    quadrado.append(inteiros[i]**2)
+print('-'*50)
+print(f'O quadrado dos números digitados são:\n{quadrado}')

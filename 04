@@ -1,0 +1,17 @@
+nome = []
+nota = []
+soma = 0.0
+for i in range (3):
+    nome.append(input('Nome: '))
+    nota.append(float(input('Nota: ')))
+for j in nota:
+    soma+= j
+media = soma / 3
+print(f'A média da turma foi : {media:.2f}')
+print('-'*50)
+print('Relação de alunos com a nota acima da média:')
+for k in range (3):
+    if nota[k] > media:
+        print(nome[k])
+        print(nota[k])
+        print('-' * 50)

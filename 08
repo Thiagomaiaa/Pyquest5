@@ -1,0 +1,16 @@
+inteiros =[]
+maior=0
+posicao=[]
+ind = 0
+for i in range (5):
+    inteiros.append(float(input(f'Digite o {i + 1}º número inteiro: ')))
+    if inteiros[i] > maior:
+        maior= inteiros[i]
+for j in inteiros:
+    if j == maior:
+        posicao.append(ind + 1)
+    ind+=1
+print('-'*50)
+print(f'O maior número digitado foi: {maior}')
+print(f'Ele apareceu {inteiros.count(maior)} vezes.')
+print(f'O número {maior} apareceu nas posições {posicao}')

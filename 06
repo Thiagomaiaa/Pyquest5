@@ -1,0 +1,13 @@
+numeros = []
+negativo = 0
+nulo = 0
+positivo = 0
+for i in range(5):
+    numeros.append(float(input(f'Digite o {i + 1}º número: ')))
+    if numeros[i] < 0:
+        negativo+=1
+    elif numeros[i] == 0:
+        nulo+=1
+    else:
+        positivo+=1
+print(f'Quantidade de negativos: {negativo}\nQuantidade de positivos: {positivo}\nQuantidades de nulos: {nulo}')
